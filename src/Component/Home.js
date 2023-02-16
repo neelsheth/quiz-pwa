@@ -10,6 +10,7 @@ export default function Home() {
 
 
   useEffect(() => {
+    localStorage.removeItem('playing')
     fetch('https://the-trivia-api.com/api/questions')
       .then(res => res.json())
       .then(data => setData(data))
