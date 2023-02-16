@@ -1,6 +1,6 @@
 {
-  "name": "Find My Taxi",
-  "short_name": "FMT",
+  "name": "Quiz Hub",
+  "short_name": "Quiz",
   "theme_color": "#50e3c2",
   "background_color": "#f69435",
   "display": "standalone",
