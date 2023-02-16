@@ -45,7 +45,7 @@ export default function Home() {
         <div>
           <img className='homeImg' src='https://elitequiz.wrteam.in/images/slider/1668511040.png'></img>
         </div>
-        <div>
+        <div className='flexCenter'>
           <div className='fontBold'>Be Ready</div>
           <div className='fontBold'>No one can stop you.</div>
           <button className='letsPlay' onClick={play}>Lets Play</button>
