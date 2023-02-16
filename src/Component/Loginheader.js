@@ -94,7 +94,6 @@ export default function Loginheader() {
 
           {!isLogin ?
             <div className='header flexEnd'>
-              <div className='log_btn'>|</div>
               <button className='googlelogo' onClick={signInWithGoogle}><img className='logoGoogle' src='https://web.docsales.com/assets/google-login-logo-27bac350625745280a897ea2db51249fcad6aee35613fcc44c40dec2daed43ec.png'></img></button>
               <div className='log_btn'>|</div>
               <button className='log_btn' onClick={() => loginOrSignup('login')}>Login</button>
