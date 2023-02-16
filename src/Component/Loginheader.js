@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithPhoneNumber } from "firebase/auth";
 import { auth, db, provider } from "../Firebase";
 import Login from './Login';
-import { LoginSocialFacebook } from 'reactjs-social-login';
-import { FacebookLoginButton } from 'react-social-login-buttons';
+
 
 
 
@@ -95,30 +94,6 @@ export default function Loginheader() {
 
           {!isLogin ?
             <div className='header flexEnd'>
-              <LoginSocialFacebook
-              appId='1602860963522449'
-              onResolve={(res)=>{
-                {
-                  setLogin(res.data.first_name)
-                  // setphoto(result.user.photoURL)
-                  setisLogin(true)
-          
-          
-                  localStorage.setItem("name", res.data.first_name);
-                  localStorage.setItem("isLogIn", true);
-                }
-                console.log(res.data.first_name)
-              }}
-              onReject={(error) =>{
-                console.log(error)
-              }}
-              > 
-                {/* <div className='googlelogo'>
-                </div> */}
-                <img className='fblogo'  src='https://www.facebook.com/images/fb_icon_325x325.png'></img>
-                {/* <FacebookLoginButton></FacebookLoginButton> */}
-                {/* <button>Fb</button> */}
-              </LoginSocialFacebook>
               <div className='log_btn'>|</div>
               <button className='googlelogo' onClick={signInWithGoogle}><img className='logoGoogle' src='https://web.docsales.com/assets/google-login-logo-27bac350625745280a897ea2db51249fcad6aee35613fcc44c40dec2daed43ec.png'></img></button>
               <div className='log_btn'>|</div>
