@@ -41,7 +41,7 @@ export default function Home() {
   return (
 
     <div>
-      {/* {console.log(localStorage.getItem('isLogIn'))} */}
+
       <div className={vis}>
         <div>
           <img className='homeImg' src='https://elitequiz.wrteam.in/images/slider/1668511040.png'></img>
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
 
       </div>
-      {console.log(data)}
+
       {isplay == true &&
 
 
