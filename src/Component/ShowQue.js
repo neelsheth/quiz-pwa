@@ -27,7 +27,7 @@ export default function ShowQue(props) {
                     setSec(59);
                 }
                 else {
-                    console.log(minutes);
+             
                     alert("Time Out");
                     alert("your score is " + score);
                     props.gameover();
@@ -99,14 +99,14 @@ export default function ShowQue(props) {
             setlock(true);
             const selected = document.getElementById(e.target.id)
             setrightclass(selected);
-            // console.log();
+         
             if (selected.innerText != props.data[idx - 1].correctAnswer) {
                 selected.className = 'wrong';
-                console.log(score);
+         
             }
             else {
                 setScore(score + 1);
-                console.log(score);
+            
             }
             const rightAns = document.getElementById('d')
             setwrongclass(rightAns);
