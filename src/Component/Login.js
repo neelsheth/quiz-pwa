@@ -76,7 +76,7 @@ export default function Login(props) {
 
 
     return (
-        <div className='popup flexCenter'>
+        <div className='popup'>
             <div className={loginHidden}>
                 <div className='headingSignup'>Sign up</div>
                 <div>
