@@ -32,7 +32,7 @@ export default function Login(props) {
         const passInput = passRef.current.value;
         const nameInput = nameRef.current.value;
 
-        console.log(emailInput + " - " + passInput + " " + nameInput)
+     
         createUserWithEmailAndPassword(auth, emailInput, passInput)
             .then((userCredential) => {
 
@@ -41,7 +41,7 @@ export default function Login(props) {
                 });
                 localStorage.setItem("name", nameInput);
                 localStorage.setItem("isLogIn", true);
-                // console.log(userCredential.user.displayName)
+     
                 props.display(false);
             })
             .catch((error) => {
@@ -53,7 +53,7 @@ export default function Login(props) {
                 else if(error.code == 'auth/weak-password'){
                     alert('password is weak. Password must be at least 6 digit')
                 }
-                 console.log(error.code == 'auth/weak-password')
+     
             })
 
     }
@@ -64,7 +64,7 @@ export default function Login(props) {
 
         signInWithEmailAndPassword(auth, emailInput, passInput)
             .then((userCredential) => {
-                console.log(userCredential.user.displayName)
+      
                 localStorage.setItem("name", userCredential.user.displayName);
                 localStorage.setItem("isLogIn", true);
                 props.display(false);
