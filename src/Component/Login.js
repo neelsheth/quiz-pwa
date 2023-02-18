@@ -73,6 +73,14 @@ export default function Login(props) {
                 alert("Invalid Id or Password");
             })
     }
+        function Changelogin(){
+        setLoginHidden('hidden')
+        setSignUpHidden('aligncenter')
+    }
+    function ChangeSignUp(){
+        setLoginHidden('aligncenter')
+        setSignUpHidden('hidden')
+    }
 
 
     return (
