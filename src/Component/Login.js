@@ -76,7 +76,7 @@ export default function Login(props) {
 
 
     return (
-        <div className='popup'>
+        <div className='popup flexcenter'>
             <div className={loginHidden}>
                 <div className='headingSignup'>Sign up</div>
                 <div>
@@ -92,7 +92,7 @@ export default function Login(props) {
                 </div>
 
                 <button className='signupbtn' onClick={signUp}>Sign up</button>
-
+                <p className='link' onClick={Changelogin}>Already User? click for login</p>
             </div>
 
             <div className={signUpHidden}>
@@ -108,7 +108,7 @@ export default function Login(props) {
                 </div>
 
                 <button className='signupbtn' onClick={login}>Log in</button>
-
+                <p className='link' onClick={ChangeSignUp}>New User? click for Sign Up</p>
             </div>
         </div>
     )
