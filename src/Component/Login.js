@@ -17,7 +17,7 @@ export default function Login(props) {
         else{
             setSignUpHidden('hidden')
         }
-    })
+    },[])
 
 
     const emailref = useRef();
