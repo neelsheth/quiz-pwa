@@ -294,3 +294,8 @@ button {
     background-color: rgb(2, 230, 2);
     font-weight: bolder;
 }
+.link{
+    margin-top: 20px;
+    color: blue;
+    cursor: pointer;
+}
